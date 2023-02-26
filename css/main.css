@@ -37,6 +37,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+section {
+  padding: 50px 0;
+}
 .container {
   margin: auto;
   width: 1300px;
@@ -75,7 +78,6 @@ a {
 }
 
 .header {
-  padding-bottom: 15px;
 }
 .logo {
   width: 120px;
@@ -148,6 +150,7 @@ ul {
   .mail {
     display: none;
   }
+
   .burger-wrapper {
     display: flex;
     justify-content: space-between;
@@ -200,9 +203,52 @@ ul {
 }
 
 .title {
+  margin: 50px 0 50px 0;
+  text-align: center;
   text-transform: uppercase;
+  font-size: 42px;
+  color: #fff;
+  text-shadow: 5px 4px 5px rgb(0 0 0 / 80%);
 }
+.text {
+  color: #fff;
+  text-shadow: 5px 4px 5px rgb(0 0 0 / 80%);
+  font-size: 25px;
+}
+.arrow {
+  width: 40px;
+  color: #fff;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main-content {
+  background: url("../images/cnc_wire.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.main-vrapper {
+  position: relative;
+  z-index: 5;
+}
 .footer {
   background: #00569c;
   padding: 22px 0;
@@ -226,6 +272,30 @@ ul {
   .footer-wrapper {
     justify-content: center;
   }
+
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+.swiper {
+  width: 80%;
+  height: 600px;
+  overflow: hidden;
+}
+.slider-title {
+  margin-bottom: 25px;
+  font-size: 18px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+.slider-img {
+  display: block;
+  width: 90%;
+  height: 87%;
+  margin: 0 auto;
 }
 .footer-icons {
   color: #fff;
@@ -323,16 +393,7 @@ svg path {
   margin-top: -15px;
   z-index: 10;
 }
-.overlay {
-  background: #000;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
+
 .main-content {
   padding: 50px 0;
 }
