@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Металлика</title>
-  </head>
+  <title>Металлика</title>
+</head>
   <body>
     <header class="header">
       <div class="container">
@@ -27,13 +28,11 @@
           <div class="top-item mail">
             <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
             <div class="adreess-text">
-              <a type="mail" href="mailto:metallica2017@mail.ru">
-                metallica2017@mail.ru</a
-              >
+              <a type="mail" href="mailto:metallica2017@mail.ru">metallica2017@mail.ru</a>
             </div>
           </div>
           <a href="tel:+79056114568" type="">
-            <div class="top-item">
+            <div class="top-item mail">
                 <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
                 <div class="adreess-text">+7(905) 611-45-68</div>
             </div>
@@ -57,16 +56,13 @@
               <a href="#" class="nav-item"> О компании </a>
             </li>
             <li>
-              <a href="#" class="nav-item"> Галерея работ </a>
+              <a href="#galary" class="nav-item galery"> Галерея работ </a>
             </li>
             <li>
-              <a href="#" class="nav-item"> Наши услуги </a>
+              <a href="#video" class="nav-item"> Производство </a>
             </li>
             <li>
-              <a href="#" class="nav-item"> Производство </a>
-            </li>
-            <li>
-              <a href="#" class="nav-item"> Контакты </a>
+              <a href="#contakts" class="nav-item"> Контакты </a>
             </li>
           </ul>
         </div>
@@ -79,16 +75,13 @@
                   <a href="#" class="nav-item"> О компании </a>
                 </li>
                 <li>
-                  <a href="localhost/wordpress/gallary/" class="nav-item"> Галерея работ </a>
+                  <a href="#galary" class="nav-item"> Галерея работ </a>
                 </li>
                 <li>
-                  <a href="localhost/wordpress/services/" class="nav-item"> Наши услуги </a>
+                  <a href="#video" class="nav-item"> Производство </a>
                 </li>
                 <li>
-                  <a href="#" class="nav-item"> Производство </a>
-                </li>
-                <li>
-                  <a href="localhost/wordpress/contakts/" class="nav-item"> Контакты </a>
+                  <a href="#contakts" class="nav-item"> Контакты </a>
                 </li>
               </ul>
         </div>
@@ -131,7 +124,7 @@
         </div>
       </div>
     </section>
-    <section class="example">
+    <section class="example" id="galary">
       <div class="container">
         <h2>Примеры работ</h2>
         <div class="swiper">
@@ -150,21 +143,22 @@
               <div class="slider-title">Рамки</div>
               <img src="./images/slider/ramka.jpg" class="slider-img" alt="">
             </div>
-            ...
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
-        
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-              
+        </div>
+        <h2 class="thumb-title" id="video">Видео работы станка</h2>
+        <div class="thumb-wrap">
           
+          <iframe  width="600" height="315" src="https://youtube.com/embed/uzMuektBKeI" frameborder="0"></iframe>
         </div>
 
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contakts">
       <div class="container">
         <h2>Контакты</h2>
         <div class="form-discr">Свазаться с нами любым способом, указаным ниже</div>
